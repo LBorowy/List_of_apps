@@ -12,7 +12,7 @@ import lombok.Data;
 @Data
 public class AppInfo {
     // klasa AppInfo - reprezentacja aplikacji
-    private int uid;
-    private String name;
-    private Drawable icon;
+    private final int uid;
+    private final String name;
+    private final Drawable icon;
 }

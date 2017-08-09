@@ -28,4 +28,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:design:26.+'
     provided 'org.projectlombok:lombok:1.16.18'
+
 }

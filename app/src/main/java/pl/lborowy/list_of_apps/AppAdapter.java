@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import lombok.AllArgsConstructor;
 
@@ -18,7 +19,7 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class AppAdapter extends RecyclerView.Adapter<AppAdapter.AppViewHolder> {
 
-    private final ArrayList<AppInfo> appInfos;
+    private final List<AppInfo> appInfos;
 
     @Override
     public AppViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
