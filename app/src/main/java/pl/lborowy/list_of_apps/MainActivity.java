@@ -7,7 +7,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // referencja do progressBar
+        ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressBar);
 
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
@@ -42,5 +47,7 @@ public class MainActivity extends AppCompatActivity {
         AppAdapter appAdapter = new AppAdapter(appInfos);
         // wrzucenie do RecyclerView
         recyclerView.setAdapter(appAdapter);
+
+        progressBar.setVisibility(View.GONE);
     }
 }
